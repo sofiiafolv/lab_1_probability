@@ -144,7 +144,7 @@ test_path <- "data/1-discrimination/test.csv"
 train_path <- "data/1-discrimination/train.csv"
 stop_words <- read_file("stop_words.txt")
 # https://stackoverflow.com/questions/27195912/why-does-strsplit-return-a-list
-splitted_stop_words <- strsplit(stop_words, split = "\n")
+splitted_stop_words <- strsplit(stop_words, split = "\r\n")
 splitted_stop_words <- splitted_stop_words[[1]]
 stop_words <- splitted_stop_words
 ```
